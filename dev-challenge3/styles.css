@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'be vietnam pro';
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #F8FAFC;
+    background-size: cover;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #4D556233;
+    height: 200px;
+}
+
+#headerbox {
+    width: 440px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-style: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.img-box {
+    height: 35px;
+}
+
+main {
+    display: grid;
+    grid: 700px / 210px 220px 220px 220px 220px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.top-container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 210px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.plan-type {
+    color: #263FA9;
+}
+
+.price-tag, .price-tag-black {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.price-tag-black {
+    color: #FFFFFF;
+}
+
+.plan-type-black {
+    color: #FFFFFF;
+    background-color: #263FA9;
+    border-radius: 20px;
+    padding: 2px 12px;
+}
+
+.per-month {
+    color: #4D5562;
+}
+
+.bot-container {
+    display: flex;
+    flex-flow: column wrap;
+    height: 415px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    height: 700px;
+}
+
+.popular {
+    background: #121826;
+    color: #F8FAFC;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    height: 700px;
+}
+
+.gray-bg {
+    background: #4D556233;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-weight: 600;
+}
+
+.text-gray {
+    display: flex;
+    padding-left: 14px;
+}
+
+.getstarted, .getstarted-black {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #263FA9;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.getstarted-black {
+    background-color: #7C4F1E;
+    color: #F8FAFC;
+    transition: 0.5s;
+}
+
+.getstarted-black:hover {
+    background-color: #50bb35;
+    transition: 0.5s;
+    border: 2px #FFD700;
+    border-style: hidden inset inset inset;
+    scale: 1.06;
+    position: relative;
+    top: 2px;
+}
+
+.getstarted-black:active {
+    transition: 0.2s;
+    scale: 1.01;
+}
+
+.getstarted-img {
+    height: 20px;
+}
+
+.underline {
+    border-bottom: 1px double #4D556233;
+    width: 100%;
+    position: relative;
+    top: 8px;
+    padding-bottom: 14px;
+}
+
+.underline-final {
+    border-bottom: 1px double #4D556233;
+    border-bottom-left-radius: 12px;
+    width: 100%;
+    position: relative;
+    top: 8px;
+    padding-bottom: 14px;
+}
+
+button {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: #5ae23f36;
+    border: 1px #4D556233;
+    border-style: hidden inset inset inset;
+}
+
+.getstarted:active {
+    transition: 0.2s;
+    scale: 0.95;
+    position: relative;
+    bottom: 2px;
+}
+
+@media only screen and (max-width: 1130px) {
+    
+    main {
+        display: grid;
+        grid: 700px / 210px 220px 220px 220px;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    #free {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    
+    main {
+        display: grid;
+        grid: 700px / 210px 220px 220px;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    #free {
+        display: none;
+    }
+
+    #team {
+        display: none;
+    }
+
+    #gray-list {
+        order: 1;
+    }
+
+    #popular {
+        order: 3;
+    }
+
+    #enterprise {
+        order: 2;
+    }
+
+    #background-sand {
+        background: url('./sand-background-image.png')
+    }
+}
