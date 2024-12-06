@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>QR code generator</title>
+</head>
+<body>
+    <img src="./assets/logo-qr-generator.svg" class="remove">
+    <div class="inputs" class="remove">
+        <input id="input-url" type="url" placeholder="Enter an url">
+        <button id="input-button" onclick="generateQR()">QR code</button>
+    </div>
+    <button id="input-button-2" onclick="generateQR()">QR code</button>
+    <div id="img-qr">
+        <img src="" id="qr-image">
+    </div>
+    <script>
+        let imgQr = document.querySelector("#img-qr");
+        let qrImage = document.querySelector("#qr-image");
+        let inputUrl = document.querySelector("#input-url");
+        let remove = document.querySelectorAll(".remove");
+
+        function generateQR () {
+            qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + inputUrl.value;
+            imgQr.classList.add("#qr-image");
+            document.querySelectorAll(".remove").style.display="none"
+        }
+
+    </script>
+</body>
+</html>
