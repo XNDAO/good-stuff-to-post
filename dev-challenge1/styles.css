@@ -1,0 +1,164 @@
+* {
+    font-family: 'outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #121826;
+    margin: auto auto;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 400px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+    padding: 0 60px;
+    gap: 47px;
+    margin-bottom: 50px;
+}
+
+article {
+    background-color: #212936;
+    /* margin: 20px 12px; */
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px;
+    transition: 1s;
+}
+
+article:hover {
+    color: #ffffff;
+    box-shadow: 0 0 12px #ffffff;
+    transition: 1s;
+}
+
+.imagem {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.imagem:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px #000000;
+}
+
+.img1 {
+    content: url('./photo_2.png');
+}
+
+.img1:hover {
+    content: url('./photo_2@2x.png');
+}
+
+.img2 {
+    content: url('./photo_1.png');
+}
+
+.img2:hover {
+    background: url('./photo_1@2x.png') no-repeat;
+}
+
+.img3 {
+    content: url('./photo_3.png');
+}
+
+.img3:hover {
+    content: url('./photo_3@2x.png');
+}
+
+.roundimage1
+{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background: #FCEED8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.roundimage2
+{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px; 
+    background: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.roundimage3
+{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px; 
+    background: #FBE5E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.emote {
+    text-align: center;
+}
+
+h1 {
+    color: #E5E7EB;
+    font-family: 'outfit', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 35px;
+}
+
+h2 {
+    color: #E5E7EB;
+    font-family: 'outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #9DA3AE;
+    font-family: 'outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.txth2 {
+    margin-bottom: 15px;
+}
+
+.txth1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 440px) {
+    main {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
