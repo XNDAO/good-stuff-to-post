@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'be vietnam pro', sans-serif;
+}
+
+body {
+    margin: auto auto;
+    background-size: cover;
+}
+
+.image-logo {
+    /* margin-left: 72px; */
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+header {
+    color: #FFFFFF;
+    text-align: center;
+    width: 680px;
+    margin: 25px auto 65px auto;
+    /* display: block; */
+}
+
+h1 {
+    /* font-size: 64px; */
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h2 {
+    /* font-size: 32px; */
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+main {
+    width: 960px;
+    margin: 0 auto 65px auto; 
+}
+
+form {
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+.primeiralinha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.segundalinha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.companysize {
+    display: flex;
+    flex-direction: column;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    border-radius: 11px;
+    border: none;
+    /* font-size: 14px; */
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+    padding: 12px;
+    resize: none;
+}
+
+textarea:focus {
+    box-shadow: 1px 4px 3px #4b004b;
+    outline: none;
+}
+
+select {
+    background-color: #FFFFFF;
+    /* width: 375px; */
+    width: 28rem;
+    /* font-size: 14px; */
+    font-size: 0.875rem;
+    font-weight: 400;
+    border-radius: 11px;
+    border: none;
+    padding-left: 14px;
+    padding-right: 18px;
+    height: 40px;
+}
+
+/* select:focus {
+    box-shadow: 1px 4px 3px #4b004b;
+    outline: none;
+    border-radius: 11px;
+} */
+
+input {
+    /* width: 375px; */
+    width: 28rem;
+    border-radius: 11px;
+    border: none;
+    line-height: 40px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+input:focus {
+    box-shadow: 1px 4px 3px #4b004b;
+    outline: none;
+}
+
+::placeholder {
+    color: #CDD5E0;
+    opacity: 1;
+  }
+
+label {
+    color: #FFFFFF;
+    /* font-size: 14px; */
+    font-size: 0.875rem;
+    font-weight: 200;
+    margin-bottom: 4px;
+}
+
+button {
+    /* font-size: 20px; */
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4036A9;
+    border-radius: 11px;
+    border: none;
+    line-height: 70px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transition: 1s;
+    background-color: rgb(251, 245, 255);
+    box-shadow: 5px 10px 8px #4b004b;
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 1040px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    header {
+        width: 424px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    main {
+        width: 90vw;
+        margin: 0 auto 65px auto; 
+    }
+    
+    .primeiralinha {
+        flex-direction: column;
+    }
+
+    .segundalinha {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .name {
+        margin-bottom: 15px;
+    }
+
+    .companysize {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    header {
+        width: 90vw;
+    }
+}

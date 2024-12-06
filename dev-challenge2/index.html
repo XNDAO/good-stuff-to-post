@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Becv - Contact us today!</title>
+</head>
+<body style="background-image: url('./bg-image.svg');">
+    <img src="./contact-form-icon.svg" class="image-logo">
+    <header>
+        <h1>Interested in our business pricing?</h1>
+        <h2>Fill out the form to view details and we’ll contact you as soon as possible.</p>
+    </header>
+    <main>
+        <form>
+            <div class="primeiralinha">
+                <article class="name">
+                    <label>Name</label>
+                        <input placeholder="Enter your name" type="text">
+                </article>
+                <article class="email">
+                    <label>Company Email</label>
+                        <input placeholder="Your-email@email.com" type="text">
+                </article>
+            </div>
+            <div class="segundalinha">
+                <article class="companysize">
+                    <label>Company Size</label>   
+                        <select>
+                            <option value="0-49">0-49 employees</option>
+                            <option value="50-99">50-99 employees</option>
+                            <option value="100-149">100-149 employees</option>
+                            <option value="150+">150+ employees</option>
+                        </select>
+                </article>
+                <article class="subject">
+                    <label>Subject</label>   
+                        <select>
+                            <option value="a">Building landing pages</option>
+                            <option value="b">Updating current website</option>
+                            <option value="c">Budgeting a website</option>
+                            <option value="d">Contact for other subjects</option>
+                        </select>
+                </article>
+            </div>
+                <article class="message">
+                    <label>Message</label>
+                        <textarea name="message" rows="5" cols="40" placeholder="Type your message here"></textarea>
+                    <button type="submit" onclick="alert('Thanks for contacting us!')">Contact Sales</button>
+                </article>
+        </form>
+    </main>
+</body>
+</html>
